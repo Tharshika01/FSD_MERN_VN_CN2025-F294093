@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div class="gallery">
+  <a href="https://en.wikipedia.org/wiki/Cat" >
+    <img src="D:\FullStack\HTML & CSS ASS - 1\cat.jpg" alt="Cat">
+  </a>
+
+  <a href="https://en.wikipedia.org/wiki/Dog">
+    <img src="D:\FullStack\HTML & CSS ASS - 1\Dog.jpg" alt="Dog">
+  </a>
+
+  <a href="https://en.wikipedia.org/wiki/Bird">
+    <img src="D:\FullStack\HTML & CSS ASS - 1\Bird.jpg">
+  </a>
+
+  <a href="https://en.wikipedia.org/wiki/Tiger">
+    <img src="D:\FullStack\HTML & CSS ASS - 1\Tiger.jpg">
+  </a>
+
+  <a href="https://en.wikipedia.org/wiki/Elephant">
+    <img src="D:\FullStack\HTML & CSS ASS - 1\Elephant.jpg" alt="Elephant">
+  </a>
+
+  <a href="https://en.wikipedia.org/wiki/Fox">
+    <img src="D:\FullStack\HTML & CSS ASS - 1\Fox.jpg" alt="Fox">
+  </a>
+</div>
+
+<style>
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;                  
+  justify-content: center;   
+}
+
+.gallery a {
+  flex: 1 1 calc(33.33% - 15px); 
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;          
+  border-radius: 5px;
+} 
+</style>
+
+</body>
+</html>

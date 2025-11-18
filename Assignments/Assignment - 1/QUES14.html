@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sticky vs Fixed Sidebar Demo</title>
+</head>
+<body>
+  <!-- Sticky version -->
+  <aside class="sticky-sidebar">
+    <h3>Sticky Sidebar</h3>
+    <p>Stays in place *until* its container ends.</p>
+  </aside>
+
+  
+<!--   
+  <aside class="fixed-sidebar">
+    <h3>Fixed Sidebar</h3>
+    <p>Always stays on screen no matter what.</p>
+  </aside>
+   -->
+
+  <main class="content">
+    <h1>Main Content</h1>
+    <p>Scroll down to see the behavior.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non placerat augue. Suspendisse pretium nunc vel leo pulvinar, vel tristique massa aliquet.</p>
+    <p>More filler text... More filler text... More filler text...</p>
+    <p>More filler text... More filler text... More filler text...</p>
+    <p>More filler text... More filler text... More filler text...</p>
+    <p>More filler text... More filler text... More filler text...</p>
+    <p>More filler text... More filler text... More filler text...</p>
+    <p>More filler text... More filler text... More filler text...</p>
+    <p>More filler text... More filler text... More filler text...</p>
+  </main>
+  <style>
+  body {
+     margin: 0; 
+     font-family: sans-serif; 
+     display: flex; 
+    }
+
+  .sticky-sidebar 
+  {
+    width: 200px;
+    position: sticky;
+    top: 0;
+    background: #eee;
+    height: 100vh;
+    padding: 1rem;
+  }
+  /* Fixed sidebar */
+  .fixed-sidebar 
+  {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ccc;
+    height: 100vh;
+    padding: 1rem;
+  }
+  .content { 
+    margin-left: 200px; 
+    padding: 1rem; 
+    }
+</style>
+</body>
+</html>

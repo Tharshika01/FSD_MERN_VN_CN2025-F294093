@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+</head>
+<body>
+
+<div class="box relative">
+    Relative
+</div>
+
+<div class="parent">
+  <div class="absolute">Absolute</div>
+</div>
+
+<div class="box fixed">
+    Fixed
+</div>
+<style>
+.box {
+  width: 150px;
+  height: 150px;
+  background: lightgray;
+  margin: 10px;
+  border: 1px solid #000;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.parent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: pink;
+}
+
+/* fixed box at bottom-left of screen */
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: lightgreen;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+  <div class="dashboard">
+    <header>Header</header>
+
+    <aside>Sidebar</aside>
+
+    <main>Main Content</main>
+
+    <div class="widgets">
+        Widget Panel
+    </div>
+
+    <footer>Footer</footer>
+  </div>
+  <style>
+  body 
+  {
+    margin: 0;
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;   /* 1/4 | 2/4 | 1/4 */
+    grid-template-rows: auto 1fr auto;    /* header | main area | footer */
+    height: 100vh;
+  }
+
+  header {
+    grid-column: 1 / 4; /* span full width */
+    background: #ccc;
+    padding: 10px;
+  }
+
+  aside {
+    background: #e0e0e0;
+    padding: 10px;
+  }
+
+  main {
+    background: #d0d0d0;
+    padding: 10px;
+  }
+
+  .widgets {
+    background: #e8e8e8;
+    padding: 10px;
+  }
+
+  footer {
+    grid-column: 1 / 4; /* span full width */
+    background: #ccc;
+    padding: 10px;
+  }
+</style>
+</body>
+</html>

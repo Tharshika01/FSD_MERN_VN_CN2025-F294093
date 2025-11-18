@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <nav class="menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+<style>
+/* Default: Mobile (≤768px) — vertical stacked */
+.menu {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.menu a {
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Medium screens (768px–1024px) — vertical + new background color */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    background: #cce0ff;  /* background changes here */
+  }
+}
+
+/* Desktop (≥1024px) — horizontal */
+@media (min-width: 1024px) {
+  .menu {
+    flex-direction: row;   /* horizontal layout */
+    background: #ddd;
+  }
+
+  .menu a {
+    display: inline-block;
+  }
+}
+</style>
+
+</body>
+</html>

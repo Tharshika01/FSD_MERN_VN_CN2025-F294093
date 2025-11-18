@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fixed Header Example</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">MyLogo</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <p>Scroll down to see the header stay fixed.</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>More content here...</p>
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #0997ac;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ba0d0d;
+    }
+
+
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+    }
+  </style>
+</body>
+</html>

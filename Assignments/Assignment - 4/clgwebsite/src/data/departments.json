@@ -1,0 +1,112 @@
+[
+  {
+    "id": "cse",
+    "name": "Computer Science Engineering",
+    "description": "CSE focuses on computing, algorithms and software engineering principles for building modern systems.",
+    "fullDescription": "The CSE department offers strong foundational courses and electives in AI, ML, Data Science and Full-Stack development. Extensive lab work and project-based learning help students build production-level skills.",
+    "courses": ["Data Structures & Algorithms", "Operating Systems", "DBMS", "Artificial Intelligence", "Web Development"],
+    "faculty": ["Dr. A. Kumar", "Dr. Meena R.", "Prof. S. Ram"],
+    "labs": ["Programming Lab", "AI & ML Lab", "Networks Lab"],
+    "icon":"/assets/cse.png"
+  },
+  {
+    "id": "it",
+    "name": "Information Technology",
+    "description": "IT covers software systems, networking and enterprise applications with practical exposures.",
+    "fullDescription": "IT prepares students for careers in enterprise software, cloud computing, networking and cybersecurity. Emphasis on internships and industry-driven projects.",
+    "courses": ["Computer Networks", "Web Technologies", "Cloud Computing", "Cybersecurity"],
+    "faculty": ["Dr. Latha", "Prof. R. Anand"],
+    "labs": ["Networking Lab", "Cloud Lab"],
+    "icon":"/assets/it.png"
+  },
+  {
+    "id": "ece",
+    "name": "Electronics & Communication Engineering",
+    "description": "ECE deals with electronics, communication systems, embedded systems and signal processing.",
+    "fullDescription": "ECE provides learning across analog/digital electronics, VLSI, embedded systems and signal processing. Strong lab component and industry collaborations.",
+    "courses": ["Digital Electronics", "Signal Processing", "VLSI Design", "Embedded Systems"],
+    "faculty": ["Dr. V. Nair", "Prof. Hema"],
+    "labs": ["VLSI Lab", "Embedded Systems Lab", "Communication Lab"],
+    "icon":"/assets/ece.png"
+  },
+  {
+    "id": "mech",
+    "name": "Mechanical Engineering",
+    "description": "Mechanical department focuses on mechanics, thermodynamics, CAD and manufacturing.",
+    "fullDescription": "Mechanical Engineering covers design, manufacturing, CAD, CAM and robotics. Hands-on workshops, design projects and strong placement opportunities are provided.",
+    "courses": ["Thermodynamics", "Fluid Mechanics", "CAD/CAM", "Robotics"],
+    "faculty": ["Dr. M. Singh", "Prof. K. Iyer"],
+    "labs": ["Thermal Lab", "CAD Lab", "Manufacturing Lab"],
+    "icon":"/assets/mech.png"
+  },
+  {
+    "id": "civil",
+    "name": "Civil Engineering",
+    "description": "Civil focuses on structural engineering, construction management and environmental engineering.",
+    "fullDescription": "Civil Engineering provides training in design and construction, surveying, environmental systems and project management. Students engage in site visits and practical labs.",
+    "courses": ["Structural Analysis", "Geotechnical Engineering", "Environmental Engineering"],
+    "faculty": ["Dr. S. Rao", "Prof. A. Joseph"],
+    "labs": ["Surveying Lab", "Material Testing Lab"],
+    "icon":"/assets/civil.webp"
+  },
+  {
+    "id": "mba",
+    "name": "Master of Business Administration (MBA)",
+    "description": "MBA trains students in management, finance, HR, marketing and entrepreneurship.",
+    "fullDescription": "MBA program focuses on managerial skills, case studies, internships and placement assistance. Electives include Finance, Marketing, HR and Operations.",
+    "courses": ["Organizational Behavior", "Financial Management", "Marketing Management", "Operations"],
+    "faculty": ["Dr. P. Nair", "Prof. S. Kumar"],
+    "labs": ["Management Lab", "Skill Development Center"],
+    "icon":"/assets/mba.jpg"
+  },
+  {
+    "id": "aids",
+    "name": "Artificial Intelligence & Data Science",
+    "description": "Advanced program focusing on AI, machine learning and big data analytics.",
+    "fullDescription": "This department prepares students for the future of computing, incorporating deep learning, NLP, data visualization, neural networks, and real-world AI applications used across industries.",
+    "courses": [
+    "Machine Learning",
+    "Deep Learning",
+    "Natural Language Processing",
+    "Big Data Analytics",
+    "Predictive Modeling"
+  ],
+  "faculty": [
+    "Dr. Rajesh T (HOD)",
+    "Prof. Kavitha S",
+    "Prof. Rithika A"
+  ],
+  "labs": [
+    "AI Innovation Lab",
+    "Deep Learning GPU Lab",
+    "Big Data & IoT Lab"
+  ],
+  "icon":"/assets/aids.jpg"
+  },
+  {
+    "id": "ft",
+  "name": "Fashion Technology",
+  "description": "Focused on apparel design, textiles, garment manufacturing and fashion innovation.",
+  "fullDescription": "The Fashion Technology department blends creativity with technology. Students are trained in fashion designing, garment construction, textile science, CAD, pattern drafting, apparel quality control, and sustainable fashion. The department prepares students for careers in the fashion and garment industry with hands-on industrial training.",
+  "courses": [
+    "Fashion Illustration & Design",
+    "Textile Science",
+    "Pattern Making & Garment Construction",
+    "Apparel CAD",
+    "Fashion Merchandising and Marketing"
+  ],
+  "faculty": [
+    "Dr. Priya K (HOD)",
+    "Prof. Harini S",
+    "Prof. Ashwin Kumar"
+  ],
+  "labs": [
+    "Garment Construction Lab",
+    "Apparel CAD Lab",
+    "Textile Testing Lab",
+    "Fashion Studio & Design Lab"
+  ],
+  "icon":"/assets/ft.webp"
+  }
+  
+]

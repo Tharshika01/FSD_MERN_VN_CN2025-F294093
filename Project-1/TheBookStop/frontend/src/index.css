@@ -1,0 +1,108 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+.hero-section {
+  height: 60vh;
+  background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .overlay {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Categories */
+.category-card {
+  padding: 25px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  background: #ffce00;
+  cursor: pointer;
+}
+
+/* Books */
+
+.book-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+.book-image {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.book-title {
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.book-author {
+  height: 20px;
+}
+
+
+.book-actions {
+  margin-top: auto;             /* pushes to bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-actions button {
+  flex: 1;                      /* equal widths */
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.book-actions button:last-child {
+  flex: 0 0 45px;               /* small heart button */
+}
+
+
+/* Offer Banner */
+.offer-banner {
+  background: #ffe89c;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}

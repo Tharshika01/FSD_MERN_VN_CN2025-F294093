@@ -1,0 +1,124 @@
+/* ===== Products Container ===== */
+.products-container{
+    display: flex;   
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+/* ===== Filters ===== */
+.products-filter{
+    width: 25%;
+    border-right:1px solid #c6c4c4 ;
+    border-top:1px solid #c6c4c4 ;
+    min-height: 88vh;
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+.products-filter h4{
+    color: rgb(67, 101, 130);
+}
+.product-filters-body{
+    padding-left: 2vw;
+}
+
+.product-filters-body h6{
+    color: rgb(83, 111, 137);
+}
+
+.sub-filter-body{
+    padding-left: 1.5vw;
+}
+.sub-filter-body label{
+    color: rgb(101, 128, 151);
+    cursor: pointer;
+}
+.sub-filter-body input{
+    cursor: pointer;
+}
+
+/* ===== Products Body ===== */
+.products-body{
+    width: 75%;
+    height: 88vh;
+    padding: 0vh 2vw;
+}
+
+.products-body h3{
+    color: rgb(76, 113, 141);
+}
+
+/* ===== Products Grid ===== */
+.products{
+    margin-top: 3vh;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    padding-bottom: 5vh;
+}
+
+/* ===== Product Item ===== */
+.product-item{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.product{
+    width: 90%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    text-align: center; /* Center everything */
+    transition: all 0.3s ease;
+}
+
+.product:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, 
+                rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, 
+                rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 0.5rem;
+}
+
+/* ===== Product Image Circular ===== */
+.product img{
+    width: 150px; /* fixed size for circle */
+    height: 150px;
+    border-radius: 50%; /* circle */
+    object-fit: cover; /* maintain aspect ratio */
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+/* ===== Product Data ===== */
+.product .product-data{
+    width: 100%;
+}
+
+.product .product-data h6{
+    margin: 5px 0;
+    font-size: 1rem;
+    color: rgb(45, 58, 69);
+}
+
+/* Remove old inline flex for price */
+.product .product-data h5{
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    color: rgb(84, 109, 130);
+    display: block;
+}
+
+.product .product-data h5 s{
+    font-size: 0.8rem;
+    color: rgb(255, 65, 65);
+}
+
+.product .product-data h5 p{
+    font-size: 0.8rem;
+    margin: 0;
+}

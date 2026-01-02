@@ -1,0 +1,212 @@
+/* ===== Global Page ===== */
+.profilePage {
+    margin-top: 10vh;
+    display: flex;
+    gap: 2.5vw;
+    padding: 0 3vw;
+    background: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Profile Card ===== */
+.profileCard {
+    width: 23%;
+    padding: 2.5vh 2vw;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 1rem;
+    border: 1px solid rgba(200, 210, 220, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.profileCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.profileCard span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.profileCard span h5 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #2b3e50;
+}
+
+.profileCard span p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #5f6c7b;
+}
+
+/* ===== Orders Container ===== */
+.profileOrders-container {
+    width: 75%;
+}
+
+.profileOrders-container h3 {
+    font-size: 1.8rem;
+    margin: 1.5vh 0 2vh;
+    color: #2e4a63;
+    font-weight: 700;
+}
+
+/* ===== Orders List ===== */
+.profileOrders {
+    height: 72vh;
+    padding: 2vh 1.5vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Scrollbar Styling */
+.profileOrders::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profileOrders::-webkit-scrollbar-thumb {
+    background: #b0bec5;
+    border-radius: 10px;
+}
+
+.profileOrders::-webkit-scrollbar-track {
+    background: #e8edf1;
+    border-radius: 10px;
+}
+
+/* ===== Individual Order Card ===== */
+.profileOrder {
+    display: flex;
+    gap: 25px;
+    background: linear-gradient(120deg, #ffffff, #fefefe);
+    padding: 2.5vh;
+    border-radius: 1rem;
+    border: 1px solid rgba(210, 220, 230, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.profileOrder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+.profileOrder img {
+    height: 28vh;
+    width: 16vw;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.profileOrder img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Order Info ===== */
+.profileOrder-data {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profileOrder-data h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1f3a55;
+    font-weight: 600;
+}
+
+.profileOrder-data p {
+    font-size: 0.85rem;
+    color: #657080;
+    margin: 0;
+}
+
+.profileOrder-data div {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+/* ===== Badges / Status ===== */
+.status {
+    padding: 3px 10px;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.status.delivered {
+    background: #d4edda;
+    color: #276749;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.cancelled {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.profileOrder-data div span p {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: #7d8b99;
+}
+
+.profileOrder-data div span p b {
+    color: #4a5f73;
+}
+
+.profileOrder-data div span h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #3b5266;
+}
+
+.profileOrder-data div span h5 b {
+    color: #1f3d5a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .profilePage {
+        flex-direction: column;
+    }
+
+    .profileCard,
+    .profileOrders-container {
+        width: 100%;
+    }
+
+    .profileOrder {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profileOrder img {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .profileOrder-data {
+        width: 100%;
+        gap: 6px;
+    }
+}
